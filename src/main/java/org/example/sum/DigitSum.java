@@ -1,4 +1,6 @@
-package org.example.characterSearch;
+package org.example.c;
+
+import org.example.characterSearch.CharacterSearch;
 
 import java.util.List;
 
