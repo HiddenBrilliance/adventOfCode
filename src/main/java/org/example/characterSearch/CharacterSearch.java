@@ -4,38 +4,40 @@ import org.example.data.InputStrings;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class CharacterSearch {
 
     public List<Character> performCharacterSearch() {
         List<Character> digits = new ArrayList<>();
 
-        for (String str : InputStrings.inputStringArray) {
-            char firstDigit = '\0'; // Initialize as null character
-            char lastDigit = '\0'; // Initialize as null character
+        for (String str : InputStrings.readLinesFromFile("/Users/dub/Desktop/adventOfCode-2023/adventOfCodeTrebuchet/src/main/resources/input.text")) {
+            boolean foundFirstDigit = false;
+            char foundSecondDigit = '\0'; // Initialize as null character
+            int i = 0;
 
-            for (char ch : str.toCharArray()) {
+            while (i < str.length()) {
+                char ch = str.charAt(i);
                 if (Character.isDigit(ch)) {
-                    if (firstDigit == '\0') {
-                        firstDigit = ch;
+                    if (!foundFirstDigit) {
+                        digits.add(ch);
+                        foundFirstDigit = true;
+                    } else {
+                        foundSecondDigit = ch; // Update foundSecondDigit for each subsequent digit
                     }
-                    lastDigit = ch;
                 }
+                i++;
             }
 
-            // If lastDigit is still null and firstDigit isn't, use the same digit again
-            if (lastDigit == '\0' && firstDigit != '\0') {
-                lastDigit = firstDigit;
-            }
-
-            // If both digits are valid, concatenate them into a single numerical string
-            if (firstDigit != '\0' && lastDigit != '\0') {
-                String concatenatedDigits = String.valueOf(firstDigit) + String.valueOf(lastDigit);
-                for (char digit : concatenatedDigits.toCharArray()) {
-                    digits.add(digit);
-                }
+            // If only one digit is found, add the first one again
+            if (foundFirstDigit && foundSecondDigit == '\0' && digits.size() >= 2) {
+                digits.add(digits.get(digits.size() - 2));
+            } else if (foundFirstDigit && foundSecondDigit == '\0' && digits.size() == 1) {
+                digits.add(digits.get(0)); // If there's only one digit, add it again
+            } else if (foundSecondDigit != '\0') {
+                digits.add(foundSecondDigit); // Add the last found digit as the second digit
             }
         }
 
         return digits;
     }
-}
+    }
