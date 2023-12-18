@@ -1,4 +1,4 @@
-package org.example.c;
+package org.example.sum;
 
 import org.example.characterSearch.CharacterSearch;
 
@@ -7,13 +7,13 @@ import java.util.List;
 public class DigitSum {
 
     public int sumDigitsFromSearch(CharacterSearch characterSearch) {
-        List<Character> digits = characterSearch.performCharacterSearch();
+        List<Integer> concatenatedDigits = characterSearch.performCharacterSearch();
         int sum = 0;
 
-        for (Character digit : digits) {
-            if (Character.isDigit(digit)) {
-                sum += Character.getNumericValue(digit);
-            }
+        for (Integer concatenatedDigit : concatenatedDigits) {
+
+                sum += concatenatedDigit; // Add the concatenated digit directly
+
         }
 
         return sum;

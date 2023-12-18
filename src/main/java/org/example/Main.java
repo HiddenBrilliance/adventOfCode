@@ -1,12 +1,13 @@
 package org.example;
 
 import org.example.characterSearch.CharacterSearch;
+import org.example.sum.DigitSum;
 
 
 public class Main {
     public static void main(String[] args) {
         CharacterSearch characterSearch = new CharacterSearch();
-        org.example.c.DigitSum digitSummation = new org.example.c.DigitSum();
+        DigitSum digitSummation = new DigitSum();
 
 
         int sumOfDigits = digitSummation.sumDigitsFromSearch(characterSearch);
