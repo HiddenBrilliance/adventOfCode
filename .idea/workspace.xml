@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64346e2e-0bb2-4dce-a077-edfbbdeafecd" name="Changes" comment="completed Day 1 with correct answer">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testInput2forConversion.rtf" afterDir="false" />
+    <list default="true" id="64346e2e-0bb2-4dce-a077-edfbbdeafecd" name="Changes" comment="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/CharacterSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/CharacterSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testInput2forConversion.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testInput2forConversion.rtf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702860150873</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits">
+      <created>1702951400248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702951400248</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,7 +199,8 @@
     <MESSAGE value="debugging CharacterSearch\" />
     <MESSAGE value="removed the hardcoded info from InputStrings and utilized url. Trying to get correct awnser" />
     <MESSAGE value="completed Day 1 with correct answer" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed Day 1 with correct answer" />
+    <MESSAGE value="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits" />
+    <option name="LAST_COMMIT_MESSAGE" value="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -201,7 +209,19 @@
           <properties class="java.io.FileNotFoundException" package="java.io" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/sum/DigitSum.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="wordBuilder" />
+        <watch expression="firstDigit" />
+        <watch expression="str" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
