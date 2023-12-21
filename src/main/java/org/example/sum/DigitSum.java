@@ -12,7 +12,7 @@ public class DigitSum {
 
         for (Integer concatenatedDigit : concatenatedDigits) {
 
-                sum += concatenatedDigit; // Add the concatenated digit directly
+                sum += concatenatedDigit;
 
         }
 
