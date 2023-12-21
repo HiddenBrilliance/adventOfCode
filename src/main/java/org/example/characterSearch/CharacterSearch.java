@@ -38,7 +38,7 @@ public class CharacterSearch {
         for (String str : InputStrings.readLinesFromFile("/Users/dub/Desktop/adventOfCode-2023/adventOfCodeTrebuchet/src/main/resources/testInput2forConversion.rtf")) {
             char firstDigit = '\0';
             char lastDigit = '\0';
-            StringBuilder wordBuilder = new StringBuilder(); // To accumulate letters forming a word
+            StringBuilder wordBuilder = new StringBuilder();
 
             for (int i = 0; i <= str.length(); i++) {
                 char ch = (i < str.length()) ? str.charAt(i) : '\0';
@@ -49,9 +49,8 @@ public class CharacterSearch {
                     }
                     lastDigit = ch;
                 } else if (Character.isLetter(ch)) {
-                    wordBuilder.append(ch); // Accumulate characters forming a word
+                    wordBuilder.append(ch);
 
-                    // Check if the word exists in the map
                     String word = wordBuilder.toString().toLowerCase();
                     Integer digitFromWord = wordToDigit(word);
                     if (digitFromWord != null) {
@@ -59,10 +58,10 @@ public class CharacterSearch {
                             firstDigit = Character.forDigit(digitFromWord, 10);
                         }
                         lastDigit = Character.forDigit(digitFromWord, 10);
-                        wordBuilder.setLength(0); // Reset the wordBuilder after finding a word
+                        wordBuilder.setLength(0);
                     }
                 } else {
-                    // If a non-letter character is encountered, reset the wordBuilder
+
                     wordBuilder.setLength(0);
                 }
             }
