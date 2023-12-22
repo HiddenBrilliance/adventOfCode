@@ -1,16 +1,19 @@
 package org.example;
 
-import org.example.characterSearch.CharacterSearch;
-import org.example.sum.DigitSum;
+import org.example.characterSearch.LetterConverter;
+import org.example.characterSearch.NonLetterDigits;
 
 
 public class Main {
     public static void main(String[] args) {
-        CharacterSearch characterSearch = new CharacterSearch();
-        DigitSum digitSummation = new DigitSum();
+        String filePath = "/path/to/your/testInput2forConversion.rtf"; // Replace this with your file path
 
 
-        int sumOfDigits = digitSummation.sumDigitsFromSearch(characterSearch);
-        System.out.println("Sum of digits: " + sumOfDigits);
+
+
+        // Using NonLetterDigits
+        NonLetterDigits nonLetterDigits = new NonLetterDigits(filePath);
+        String nonLetterDigitsString = nonLetterDigits.getNonLetterDigits(filePath);
+        System.out.println("Non-Letter Digits: " + nonLetterDigitsString);
     }
 }
