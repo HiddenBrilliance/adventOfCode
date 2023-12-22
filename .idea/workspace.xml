@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64346e2e-0bb2-4dce-a077-edfbbdeafecd" name="Changes" comment="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits">
+    <list default="true" id="64346e2e-0bb2-4dce-a077-edfbbdeafecd" name="Changes" comment="clean up">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/LetterConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/NonLetterDigits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/CharacterSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/CharacterSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/characterSearch/CharacterSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sum/DigitSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sum/DigitSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/testInput2forConversion.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testInput2forConversion.rtf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702951400248</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="performCharacterSearch recognizes keys but I have to figure out how to get it to work as intended wordBuilder only acknowledges first word/digit">
+      <created>1703035100322</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703035100322</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clean up">
+      <created>1703130780691</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703130780691</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,7 +218,9 @@
     <MESSAGE value="removed the hardcoded info from InputStrings and utilized url. Trying to get correct awnser" />
     <MESSAGE value="completed Day 1 with correct answer" />
     <MESSAGE value="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits" />
-    <option name="LAST_COMMIT_MESSAGE" value="added digitWords into my CharacterSearch TODO is fixing logic to read digitWords as digits" />
+    <MESSAGE value="performCharacterSearch recognizes keys but I have to figure out how to get it to work as intended wordBuilder only acknowledges first word/digit" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -210,18 +230,21 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/sum/DigitSum.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/characterSearch/LetterConverter.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/characterSearch/LetterConverter.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="GradleRunConfiguration">
-        <watch expression="wordBuilder" />
-        <watch expression="firstDigit" />
-        <watch expression="str" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
