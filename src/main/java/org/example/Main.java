@@ -1,7 +1,6 @@
 package org.example;
 
-import org.example.characterSearch.LetterConverter;
-import org.example.characterSearch.NonLetterDigits;
+import org.example.characterSearch.NumberDigitLogic;
 
 
 public class Main {
@@ -12,8 +11,8 @@ public class Main {
 
 
         // Using NonLetterDigits
-        NonLetterDigits nonLetterDigits = new NonLetterDigits(filePath);
-        String nonLetterDigitsString = nonLetterDigits.getNonLetterDigits(filePath);
+        NumberDigitLogic numberDigitLogic = new NumberDigitLogic(filePath);
+        String nonLetterDigitsString = numberDigitLogic.getNonLetterDigits(filePath);
         System.out.println("Non-Letter Digits: " + nonLetterDigitsString);
     }
 }

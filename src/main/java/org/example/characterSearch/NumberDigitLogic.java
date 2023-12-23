@@ -1,8 +1,8 @@
 package org.example.characterSearch;
 
-public class NonLetterDigits {
+public class NumberDigitLogic {
 
-    public NonLetterDigits(String filePath) {
+    public NumberDigitLogic(String filePath) {
     }
 
     public String getNonLetterDigits(String inputString) {
